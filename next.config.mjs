@@ -21,6 +21,14 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  // 配置Cloudflare Pages特殊环境
+  productionBrowserSourceMaps: true,
+  swcMinify: true,
+  reactStrictMode: true,
+  // Cloudflare Pages特定配置
+  env: {
+    NEXT_PUBLIC_DEPLOYMENT_ENV: 'cloudflare',
+  },
 }
 
 mergeConfig(nextConfig, userConfig)

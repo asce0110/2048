@@ -1,0 +1,21 @@
+name = "2048-game"
+main = "_worker.js"
+compatibility_date = "2025-03-29"
+
+# 静态资源配置
+[site]
+bucket = ".next/static"
+
+# 环境变量
+[vars]
+NODE_VERSION = "20.11.1"
+
+# 生产环境配置
+[env.production]
+routes = [
+  { pattern = "/*", zone_name = "yourzonename.com" }
+]
+
+# 开发环境配置
+[env.development]
+workers_dev = true 

@@ -1,0 +1,12 @@
+[build]
+command = "pnpm install && pnpm build"
+base = "/"
+output = ".next"
+publish = "public"
+
+[build.environment]
+NODE_VERSION = "20.11.1"
+NEXT_USE_NETLIFY_EDGE = "true"
+
+[build.processing]
+skip_processing = true 
