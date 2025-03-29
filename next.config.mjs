@@ -23,12 +23,9 @@ const nextConfig = {
   },
   // 配置Cloudflare Pages特殊环境
   productionBrowserSourceMaps: true,
-  swcMinify: true,
-  reactStrictMode: true,
-  // Cloudflare Pages特定配置
-  env: {
-    NEXT_PUBLIC_DEPLOYMENT_ENV: 'cloudflare',
-  },
+  // 为Cloudflare Pages优化
+  output: 'standalone',
+  reactStrictMode: true
 }
 
 mergeConfig(nextConfig, userConfig)

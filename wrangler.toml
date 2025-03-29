@@ -6,6 +6,9 @@ compatibility_date = "2025-03-29"
 [site]
 bucket = ".next/static"
 
+# Cloudflare Pages 特定配置
+pages_build_output_dir = ".next"
+
 # 环境变量
 [vars]
 NODE_VERSION = "20.11.1"

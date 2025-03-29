@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "cloudflare:build": "npx @cloudflare/next-on-pages@1 || next build",
     "start": "next start",
     "lint": "next lint",
     "deploy:cloudflare": "pnpm build && wrangler pages deploy .next/",
