@@ -1,5 +1,7 @@
 # Cloudflare Pages 配置
 [build]
-command = "pnpm install && pnpm build"
+command = "bash ./build.sh"
 output_directory = ".next"
-environment = { NODE_VERSION = "20.11.1" } 
+
+[build.environment]
+NODE_VERSION = "20.11.1" 
